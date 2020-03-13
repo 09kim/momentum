@@ -5,16 +5,19 @@
   <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
+    <div class="bg"></div>
+    <span class= "cssweather"><span class="js-weather"></span></span>
     <div class="js-clock clock">    
     <h1>00:00</h1>
     </div>    
-  
     <form class="js-form form">
-      <div class= "place1"><input type="text" style="text-align:center; font-size:2.5rem;" placeholder="What is your name?" ></div>
+      <div class= "place1"><input type="text" style="text-align:center; font-size:2.5rem; border: none; 
+        background-color:transparent; border-bottom:1.5px solid white; color:white;" placeholder="What is your name?" ></div>
+     
       
-
       </form>
       <h4 class="js-greetings greetings"></h4>
+      <div class="Ask"><h3>What is your main focus for today?</h3></div>
       <form class="js-toDoform">
         <div class=place2><input class="toDoForm" type="text" style="text-align:center" placeholder="write a to do"/></div>
 
@@ -22,7 +25,10 @@
       <ul class="js-toDoList csstoDo">
        
         </ul>
-        <div style = text-align:center; ><span class="js-weather cssweather"></span></div>
+        <div class="js-location location">
+        <span class="locationText"></span>
+        </div>
+        
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
